@@ -1,4 +1,8 @@
 // 1. Given the following functions:
+
+
+var fruit = ['apple', 'orange', 'banana', 'pineapple']
+
 function printResult(fruit) {
   console.log('fruit: ' + fruit)
 }
@@ -11,14 +15,41 @@ function printFruit(fruits) {
 // If printFruit was called with ['apple', 'orange', 'banana', 'pineapple']
 // How many times would printResult be called?
 // Uncomment the following line and save your answer to the `numberPrintResultCalls` variable
-// const numberPrintResultCalls = 
+const numberPrintResultCalls = 4
 
 // 2. Write a function `logNames` that takes an array as a parameter. 
 // It should loop for the length of the array and console.log the name at current position. 
 // logNames(['Sally', 'Nikita', 'Arnav', 'Akira']) would console.log each person's name. 4 names in total.
 // logNames(['Arnav', 'Akira']) would console.log each person's name. 2 names in total.
 
+function logNames(names) {
+  for (let i = 0; i < names.length; i++) {
+      console.log(names[i]);
+  }
+}
 
+var arr = ['Sally', 'Nikita', 'Arnav', 'Akira']
+
+function logNames(arr) {
+  console.log('The names in the array are: ', arr);
+  arr.length;
+  console.log('Here are the names in the array: ', arr);
+}
+
+logNames(arr)
+console.log(arr)
+
+
+var arr = ['Arnav', 'Nikita']
+
+function logNames(arr) {
+  console.log('The names in the array are: ', arr);
+  arr.length;
+  console.log('Here are the names in the array: ', arr);
+}
+
+logNames(arr)
+console.log(arr)
 /** STRETCH **/
 // the next two challenges can be a bit tricky, remember to ask for help if you need it
 
