@@ -5,32 +5,44 @@
 // Example: add(2, 1) will return 3.
 // Example: add(8, 2) will return 10.
 function add(num1, num2) {
-
+    return num1 + num2
 }
+
+add(2, 1)
+add(8, 2)
 
 // 2. minus
 // Write a function `minus` that takes two variables and minuses the second variable from the first and returns the result.
 // Example: minus(2, 1) will return 1, 
 // Example: minus(8, 2) will return 6.
 function minus(num1, num2) {
-
+  return num1 - num2
 }
+
+minus(2, 1) 
+minus(8, 2) 
 
 // 3. multiply 
 // Write a function `multiply` that takes two variables and muliplys the two variables and returns the result.
 // Example: multiply(3, 2) will return 6.
 // Example: multiply(9, 2) will return 18.
 function multiply(num1, num2) {
-
+  return num1 * num2
 }
+
+multiply(3, 2)
+multiply(9, 2) 
 
 // 4. divide
 // Write a function `divide` that takes two variables and divides the two variables and returns the result.
 // Example: divide(6, 2) will return 3.
 // Example: divide(15, 3) will return 5.
 function divide(num1, num2) {
-
+  return num1 / num2
 }
+
+divide(6, 2) 
+divide(15, 3) 
 
 // 5. increment
 // Write a function `increment` that takes a variable and increases the value of the variable and returns the result.
@@ -38,8 +50,11 @@ function divide(num1, num2) {
 // Example: increment(34) will return 35.
 // Tip : research the difference between num++ and ++num
 function increment(num) {
-
+  return ++num
 }
+
+increment(22)  
+increment(34) 
 
 // 6. decrement
 // Write a function `decrement` that takes a variable and decreases the value of the variable and returns the result.
@@ -47,8 +62,11 @@ function increment(num) {
 // Example: decrement(15) will return 14.
 // Tip: research the difference between num-- and --num
 function decrement(num) {
-
+  return --num
 }
+
+decrement(6) 
+decrement(15)
 
 // 7. and
 // Write a function `and` that takes two booleans as parameters.
@@ -56,8 +74,11 @@ function decrement(num) {
 // Example: and(true, true) will return true.
 // Example: and(true, false) will return false.
 function and(bool1, bool2) {
-
+  return bool1, bool2
 }
+
+and(true, true)
+and(true, false)
 
 // 8. or
 // Write a function `or` that takes two booleans as parameters.
@@ -66,8 +87,15 @@ function and(bool1, bool2) {
 // Example: or(true, false) will return true.
 // Example: or(false false) will return false.
 function or(bool1, bool2) {
-
+  if (bool1 === bool2){
+    return true
+  } else{
+    return false
+  }
 }
+
+or(true, false) 
+or(false, false) 
 
 // 9. not
 // Write a function `not` that takes a boolean as a parameter.
@@ -75,8 +103,11 @@ function or(bool1, bool2) {
 // Example: not(false) will return true.
 // Example: not(true) will return false.
 function not(bool) {
-
+  return !bool
 }
+
+not(false) 
+not(true) 
 
 // ----- Comparison Operators -----
 
@@ -86,32 +117,47 @@ function not(bool) {
 // Example: isGreaterThan(12, 10) should return true.
 // Example: isGreaterThan(12, 24) should return false.
 function isGreaterThan(num1, num2) {
-
+  return num1 > num2
 }
+
+isGreaterThan(12, 10) 
+isGreaterThan(12, 24) 
 
 // 11. less than
 // Write a function `isLessThan` that takes two parameters and checks if the first parameter is less than the second.
 // Example: isLessThan(63, 102) should return true.
 // Example: isLessThan(63, 60) should return false.
 function isLessThan(num1, num2) {
-
+  return num1 < num2
 }
+
+isLessThan(63, 102) 
+isLessThan(63, 60) 
 
 // 12. greater than or equal to
 // Write a function `isGreaterOrEqual` that takes two parameters and checks if the first parameter is greater than the second.
 // Example: isGreaterOrEqual(12, 12) should return true, isGreaterOrEqual(14, 12) should return true.
 // Example: isGreaterOrEqual(12, 24) should return false.
 function isGreaterOrEqual(num1, num2) {
-
+  return num1 >= num2
 }
+
+isGreaterOrEqual(12, 12) 
+isGreaterOrEqual(12, 24) 
+
+
+function isGreaterOrEqual(num1, num2) {
 
 // 13. less than or equal to
 // Write a function `isLessOrEqual` that takes two parameters and checks if the first parameter is greater than the second.
 // Example: isLessOrEqual(10, 10) should return true, isLessOrEqual(8, 10) should return true.
 // Example: isLessOrEqual(123, 24) should return false.
 function isLessOrEqual(num1, num2) {
-
+  return num1 <= num2
 }
+
+isLessOrEqual(10, 10)
+isLessOrEqual(123, 24) 
 
 
 // 14. equal to
@@ -119,24 +165,32 @@ function isLessOrEqual(num1, num2) {
 // Example: isSimilar(10, '10') should return true.
 // Example: isSimilar(10, '14') should return false.
 function isSimilar(num, stringNum) {
-
+  return num == stringNum
 }
 
+isSimilar(10, '10') 
+isSimilar(10, '14') 
 // 15. equal value and equal type
 // Write a function `isSameTypeAndVal` that takes two parameters and checks the two values for strict equality.
 // Example: isSameTypeAndVal('1', 1) should return false. 
 // Example: isSameTypeAndVal('password', 'passW0rd') should return false.
 function isSameTypeAndVal(stringOrNum1, stringOrNum2) {
-
+  return stringOrNum1 === stringOrNum2
 }
+
+isSameTypeAndVal('1', 1)
+isSameTypeAndVal('password', 'passW0rd')
 
 // 16. not equal
 // Write a function `isNotSimilar` that takes two parameters and checks the two values do not equal the same value.
 // Example: isNotSimilar('1', 1) should return false. 
 // Example: isNotSimilar(1, '2') should return true.
 function isNotSimilar(stringOrNum1, stringOrNum2) {
-
+  return stringOrNum1 != stringOrNum2
 }
+
+isNotSimilar('1', 1)  
+isNotSimilar(1, '2') 
 
 // 17. not equal value or type
 // Write a function `isNotSameTypeOrVal` that takes two parameters and checks the two values do not equal the same value or type.
@@ -144,8 +198,12 @@ function isNotSimilar(stringOrNum1, stringOrNum2) {
 // Example: isNotSameTypeOrVal(123, '123') should return false - because (it is false that) they are the same value.
 // Example: isNotSameTypeOrVal(234, 123) should return false - because (it is false that) they are the same data type.
 function isNotSameTypeOrVal(one, two) {
-
+  return one !=- two
 }
+
+isNotSameTypeOrVal(234, '123') 
+isNotSameTypeOrVal(123, '123')
+isNotSameTypeOrVal(234, 123) 
 
 // ------------ CHECKS -----------
 // The below lines of code lets us test it to see how you're doing,
@@ -172,3 +230,4 @@ module.exports = {
   isNotSameTypeOrVal
 }
 
+}
